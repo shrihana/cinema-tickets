@@ -59,7 +59,7 @@ public class TicketServiceImpl implements TicketService {
             throw new InvalidPurchaseException("All infants must be accompanied by an adult");
         }
         if (accountId.longValue()<=0){
-            throw new InvalidPurchaseException("Invalid");
+            throw new InvalidPurchaseException("Invalid account");
         }
     }
 }
